@@ -1,17 +1,34 @@
 // import { DocusaurusContext } from "@docusaurus/types";
 import path from "path";
+import merge from "lodash.merge";
 
-export default function ifoodDocusaurus() {
+import { ContentLoadedActions, ThemeContext } from "./types";
+import { defaultThemeData } from "./data";
+
+import { THEME_NAME } from "./constants";
+
+export default function ifoodDocusaurus(context: ThemeContext) {
+  const {
+    siteConfig: { ifood },
+  } = context;
+  const themeData = merge(defaultThemeData, ifood || {});
+
   return {
-    name: "@ifood/docusaurus-theme",
+    name: THEME_NAME,
     getThemePath() {
       return path.resolve(__dirname, "theme");
     },
     getClientModules() {
       return [path.resolve(__dirname, "./style.css")];
     },
-    translateThemeConfig({ themeConfig }: { themeConfig: any }) {
-      console.log(themeConfig);
+    translateThemeConfig({
+      themeConfig,
+      ifood,
+    }: {
+      themeConfig: any;
+      ifood: any;
+    }) {
+      console.log(ifood);
       return {
         ...themeConfig,
         footer: {
@@ -19,6 +36,10 @@ export default function ifoodDocusaurus() {
           copyright: `Copyright © ${new Date().getFullYear()} iFood.`,
         },
       };
+    },
+    contentLoaded({ actions }: { actions: ContentLoadedActions }) {
+      const { setGlobalData } = actions;
+      setGlobalData(themeData);
     },
   };
 }
