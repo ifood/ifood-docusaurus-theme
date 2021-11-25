@@ -38,3 +38,11 @@
   font-weight: 300;
 }
 
+.footer__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__link {
+  width: fit-content;
+}
