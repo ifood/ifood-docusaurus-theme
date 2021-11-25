@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --noEmit && yarn babel:lib",
+    "watch": "concurrently --names \"lib,tsc\" --kill-others \"yarn babel:lib --watch\" \"yarn tsc --watch\"",
     "babel:lib": "BABEL_ENV=lib babel src -d lib --extensions \".tsx,.ts\" --ignore \"**/*.d.ts\" --copy-files"
   },
   "keywords": [],
@@ -29,6 +30,7 @@
     "@docusaurus/types": "^2.0.0-beta.9",
     "@types/lodash.merge": "^4.6.6",
     "@types/react": "^17.0.34",
+    "concurrently": "^6.4.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "typescript": "^4.4.4"
