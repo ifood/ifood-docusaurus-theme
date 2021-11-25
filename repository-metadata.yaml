@@ -1,0 +1,15 @@
+apiVersion: ifood/v2
+kind: Repository
+tags:
+  - other
+spec:
+  contents:
+    - name: "@ifood/docusaurus-theme"
+      description: iFood Docusaurus theme
+      type: other
+      ownerLayerSlug: stds
+      subType:
+        - other
+      impactLevel: 5
+      deployment:
+        type: none
