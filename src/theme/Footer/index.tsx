@@ -1,11 +1,15 @@
 import * as React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import bem from 'better-bem'
+import classNames from 'classnames'
 
 import useThemeContext from "../../useThemeContext";
 import { Logo, Facebook, Instagram, Twitter, Youtube } from "./icons";
 import "./styles.css";
 import { FooterContent } from "./types";
 import { Links } from "./Links";
+
+const { cn, el } = bem('footer');
 
 export default function Footer() {
   const { footer } = useThemeContext();
@@ -14,37 +18,37 @@ export default function Footer() {
   const { footer: footerContent } = siteConfig.themeConfig as FooterContent;
 
   return (
-    <footer className="footer">
+    <footer className={cn}>
       <div className="container">
-        <div className="row footer__top">
-          <div className="col col--3">
-            <h3 className="footer__title">{siteConfig.title}</h3>
+        <div className={classNames('row', el('top').cn)}>
+          <div className={classNames('col', 'col--3', el('social').cn)}>
+            <h3 className={el('title').cn}>{siteConfig.title}</h3>
             <div>
               <a
                 href={footer.links.social.facebook}
                 target="__blank"
-                className="footer__social_link"
+                className={el('social-link').cn}
               >
                 <Facebook />
               </a>
               <a
                 href={footer.links.social.instagram}
                 target="__blank"
-                className="footer__social_link"
+                className={el('social-link').cn}
               >
                 <Instagram />
               </a>
               <a
                 href={footer.links.social.twitter}
                 target="__blank"
-                className="footer__social_link"
+                className={el('social-link').cn}
               >
                 <Twitter />
               </a>
               <a
                 href={footer.links.social.youtube}
                 target="__blank"
-                className="footer__social_link"
+                className={el('social-link').cn}
               >
                 <Youtube />
               </a>
@@ -54,9 +58,9 @@ export default function Footer() {
             <Links links={links} idx={idx}/>
           ))}
         </div>
-        <div className="row footer__bottom">
+        <div className={classNames('row', el('bottom').cn)}>
           <Logo />
-          <p className="footer__bottom_copyright">{footer.copyright}</p>
+          <p className={el('bottom-copyright').cn}>{footer.copyright}</p>
         </div>
       </div>
     </footer>
