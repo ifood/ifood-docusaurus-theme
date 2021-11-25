@@ -1,8 +1,8 @@
 import { DocusaurusContext, DocusaurusConfig, PluginContentLoadedActions } from "@docusaurus/types";
 
-export type IfoodThemeConfig = {
-  footer: FooterDataType;
-};
+import { defaultThemeData } from './data';
+
+export type IfoodThemeConfig = typeof defaultThemeData;
 
 interface IfoodSiteConfig extends DocusaurusConfig {
   ifood: IfoodThemeConfig;

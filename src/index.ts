@@ -28,14 +28,15 @@ export default function ifoodDocusaurus(context: ThemeContext) {
       themeConfig: any;
       ifood: any;
     }) {
-      console.log(ifood);
-      return {
-        ...themeConfig,
-        footer: {
-          ...themeConfig.footer,
-          copyright: `Copyright © ${new Date().getFullYear()} iFood.`,
+      const config = {
+        navbar: {
+          logo: {
+            alt: 'iFood logo',
+            src: 'default',
+          }
         },
-      };
+      }
+      return merge(themeConfig, config);
     },
     contentLoaded({ actions }: { actions: ContentLoadedActions }) {
       const { setGlobalData } = actions;
