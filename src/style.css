@@ -73,3 +73,18 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
     max-width: var(--ifm-container-width-xl);
   }
 }
+
+.menu__link {
+  border-radius: 0;
+}
+
+.menu__link.menu__link--active {
+  border-left: 4px solid var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  background: none;
+}
+
+.theme-doc-sidebar-item-link-level-2 .menu__link.menu__link--active {
+  border: none;
+  background: none;
+}
