@@ -13,6 +13,10 @@
   padding-bottom: 32px;
 }
 
+.footer__social {
+  margin-bottom: 1rem;
+}
+
 .footer__bottom {
   padding-top: 32px;
   border-top: 1px solid rgb(220, 220, 220);
@@ -20,7 +24,7 @@
   justify-content: center;
 }
 
-.footer__bottom_copyright {
+.footer__bottom-copyright {
   max-width: 205px;
   font-weight: 500;
   font-size: 12px;
@@ -29,7 +33,7 @@
   margin-left: 16px;
 }
 
-.footer__social_link {
+.footer__social-link {
   margin-right: 16px;
 }
 
