@@ -1,9 +1,9 @@
 /// <reference types="@docusaurus/module-type-aliases" />
 
-declare module "@theme/ThemedImage" {
-  import type { ComponentProps } from "react";
+declare module '@theme/ThemedImage' {
+  import type { ComponentProps } from 'react';
 
-  export interface Props extends Omit<ComponentProps<"img">, "src"> {
+  export interface Props extends Omit<ComponentProps<'img'>, 'src'> {
     readonly sources: {
       readonly light: string;
       readonly dark: string;
@@ -14,4 +14,4 @@ declare module "@theme/ThemedImage" {
   export default ThemedImage;
 }
 
-declare module "*.svg"
+declare module '*.svg';

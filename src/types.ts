@@ -1,4 +1,8 @@
-import { DocusaurusContext, DocusaurusConfig, PluginContentLoadedActions } from "@docusaurus/types";
+import {
+  DocusaurusContext,
+  DocusaurusConfig,
+  PluginContentLoadedActions,
+} from '@docusaurus/types';
 
 import { defaultThemeData } from './data';
 

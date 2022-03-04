@@ -1,1 +1,1 @@
-export const THEME_NAME = "@ifood/docusaurus-theme";
+export const THEME_NAME = '@ifood/docusaurus-theme';

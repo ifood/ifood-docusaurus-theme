@@ -1,11 +1,11 @@
 // import { DocusaurusContext } from "@docusaurus/types";
-import path from "path";
-import merge from "lodash.merge";
+import path from 'path';
+import merge from 'lodash.merge';
 
-import { ContentLoadedActions, ThemeContext } from "./types";
-import { defaultThemeData } from "./data";
+import { ContentLoadedActions, ThemeContext } from './types';
+import { defaultThemeData } from './data';
 
-import { THEME_NAME } from "./constants";
+import { THEME_NAME } from './constants';
 
 export default function ifoodDocusaurus(context: ThemeContext) {
   const {
@@ -16,10 +16,10 @@ export default function ifoodDocusaurus(context: ThemeContext) {
   return {
     name: THEME_NAME,
     getThemePath() {
-      return path.resolve(__dirname, "theme");
+      return path.resolve(__dirname, 'theme');
     },
     getClientModules() {
-      return [path.resolve(__dirname, "./style.css")];
+      return [path.resolve(__dirname, './style.css')];
     },
     translateThemeConfig({
       themeConfig,
@@ -33,9 +33,9 @@ export default function ifoodDocusaurus(context: ThemeContext) {
           logo: {
             alt: 'iFood logo',
             src: 'default',
-          }
+          },
         },
-      }
+      };
       return merge(themeConfig, config);
     },
     contentLoaded({ actions }: { actions: ContentLoadedActions }) {
