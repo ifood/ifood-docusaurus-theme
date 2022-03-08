@@ -31,6 +31,7 @@
     "@babel/preset-typescript": "^7.16.0",
     "@docusaurus/module-type-aliases": "^2.0.0-beta.9",
     "@docusaurus/types": "^2.0.0-beta.9",
+    "@release-it/conventional-changelog": "^4.2.0",
     "@types/better-bem": "^1.1.0",
     "@types/lodash.merge": "^4.6.6",
     "@types/react": "^17.0.34",
@@ -38,6 +39,7 @@
     "prettier": "2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "release-it": "^14.12.5",
     "typescript": "^4.4.4"
   }
 }
