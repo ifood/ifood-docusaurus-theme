@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Docusaurus theme for all iFood open source projects",
   "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --noEmit && yarn babel:lib",
