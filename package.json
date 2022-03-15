@@ -1,17 +1,18 @@
 {
   "name": "@ifood/docusaurus-theme",
   "version": "1.0.0",
-  "description": "",
+  "description": "Docusaurus theme for all iFood open source projects",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --noEmit && yarn babel:lib",
     "watch": "concurrently --names \"lib,tsc\" --kill-others \"yarn babel:lib --watch\" \"yarn tsc --watch\"",
     "babel:lib": "BABEL_ENV=lib babel src -d lib --extensions \".tsx,.ts\" --ignore \"**/*.d.ts\" --copy-files",
-    "format": "prettier \"src/*.+(ts|tsx|css)\" --write"
+    "format": "prettier \"src/*.+(ts|tsx|css)\" --write",
+    "format:check": "prettier \"src/*.+(ts|tsx|css)\""
   },
   "keywords": [],
-  "author": "Italo Sousa",
+  "author": "iFood",
   "license": "ISC",
   "dependencies": {
     "better-bem": "^2.0.1",
