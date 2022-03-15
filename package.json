@@ -4,7 +4,8 @@
   "description": "Docusaurus theme for all iFood open source projects",
   "main": "lib/index.js",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +13,8 @@
     "watch": "concurrently --names \"lib,tsc\" --kill-others \"yarn babel:lib --watch\" \"yarn tsc --watch\"",
     "babel:lib": "BABEL_ENV=lib babel src -d lib --extensions \".tsx,.ts\" --ignore \"**/*.d.ts\" --copy-files",
     "format": "prettier \"src/*.+(ts|tsx|css)\" --write",
-    "format:check": "prettier \"src/*.+(ts|tsx|css)\""
+    "format:check": "prettier \"src/*.+(ts|tsx|css)\"",
+    "prepare": "yarn build"
   },
   "keywords": [],
   "author": "iFood",
