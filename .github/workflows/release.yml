@@ -14,7 +14,6 @@ on:
         - major
 
 jobs:
-
   validate:
     uses: ./.github/workflows/validate.yml
 
