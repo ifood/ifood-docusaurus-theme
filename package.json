@@ -1,6 +1,6 @@
 {
   "name": "@ifood/docusaurus-theme",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Docusaurus theme for all iFood open source projects",
   "main": "lib/index.js",
   "publishConfig": {
@@ -14,7 +14,8 @@
     "babel:lib": "BABEL_ENV=lib babel src -d lib --extensions \".tsx,.ts\" --ignore \"**/*.d.ts\" --copy-files",
     "format": "prettier \"src/*.+(ts|tsx|css)\" --write",
     "format:check": "prettier \"src/*.+(ts|tsx|css)\"",
-    "prepare": "yarn build"
+    "prepare": "yarn build",
+    "release": "release-it --ci"
   },
   "keywords": [],
   "author": "iFood",
