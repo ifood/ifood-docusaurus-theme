@@ -1,6 +1,6 @@
 {
   "name": "@ifood/docusaurus-theme",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Docusaurus theme for all iFood open source projects",
   "main": "lib/index.js",
   "publishConfig": {
