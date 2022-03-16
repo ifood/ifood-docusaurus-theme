@@ -15,7 +15,31 @@ This project was created to provide a consistent experience trought iFood projec
 - [Docusaurus](https://docusaurus.io/docs) >= 2.0.0
 - [Node](https://nodejs.org/en/download/) >= 16.14.0
 
-*tbd*
+1. Install docusaurus 
+
+> Due the unstable version of Docusaurus, we currently recomend use the version `2.0.0-beta.9`. We don't guarantee that the theme will work properly in other versions. 
+
+```bash
+npx create-docusaurus@2.0.0-beta.9 test-idt classic
+```
+
+2. Install the package
+
+```bash
+npm i @ifood/docusaurus-theme
+```
+
+3. Push the theme to the themes array in `docusaurus.config.js`
+
+```js
+...
+projectName: 'docusaurus', // Usually your repo name.
+themes: [
+    '@ifood/docusaurus-theme'
+],
+presets: [
+...
+```
 
 ## Contributing
 
