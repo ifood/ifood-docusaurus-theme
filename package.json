@@ -1,17 +1,23 @@
 {
   "name": "@ifood/docusaurus-theme",
   "version": "1.0.0",
-  "description": "",
+  "description": "Docusaurus theme for all iFood open source projects",
   "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --noEmit && yarn babel:lib",
     "watch": "concurrently --names \"lib,tsc\" --kill-others \"yarn babel:lib --watch\" \"yarn tsc --watch\"",
     "babel:lib": "BABEL_ENV=lib babel src -d lib --extensions \".tsx,.ts\" --ignore \"**/*.d.ts\" --copy-files",
-    "format": "prettier \"src/*.+(ts|tsx|css)\" --write"
+    "format": "prettier \"src/*.+(ts|tsx|css)\" --write",
+    "format:check": "prettier \"src/*.+(ts|tsx|css)\"",
+    "prepare": "yarn build"
   },
   "keywords": [],
-  "author": "Italo Sousa",
+  "author": "iFood",
   "license": "ISC",
   "dependencies": {
     "better-bem": "^2.0.1",
@@ -31,6 +37,7 @@
     "@babel/preset-typescript": "^7.16.0",
     "@docusaurus/module-type-aliases": "^2.0.0-beta.9",
     "@docusaurus/types": "^2.0.0-beta.9",
+    "@release-it/conventional-changelog": "^4.2.0",
     "@types/better-bem": "^1.1.0",
     "@types/lodash.merge": "^4.6.6",
     "@types/react": "^17.0.34",
@@ -38,6 +45,7 @@
     "prettier": "2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "release-it": "^14.12.5",
     "typescript": "^4.4.4"
   }
 }
