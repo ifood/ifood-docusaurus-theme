@@ -58,8 +58,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   max-width: var(--ifm-container-width);
 }
 
-.docPage_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module,
-.docMainContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module {
+.main-wrapper.docs-wrapper.docs-doc-page {
   margin: 0 auto;
   max-width: var(--ifm-container-width);
 }
@@ -70,6 +69,10 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 @media (min-width: 1440px) {
   .navbar__inner {
+    max-width: var(--ifm-container-width-xl);
+  }
+
+  .main-wrapper.docs-wrapper.docs-doc-page {
     max-width: var(--ifm-container-width-xl);
   }
 }
