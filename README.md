@@ -4,6 +4,7 @@
 </h1>
 
 [![npm](https://img.shields.io/npm/v/@ifood/docusaurus-theme)](https://www.npmjs.com/package/@ifood/docusaurus-theme)
+[![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 > iFood's official Docusaurus theme
 
@@ -54,29 +55,13 @@ presets: [
 ...
 ```
 
+## Code of Conduct
+
+iFood has adopted a Code of Conduct that we expect project participants to adhere to. Please read [the full text](https://github.com/ifood/.github/blob/main/CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
+
 ## Contributing
 
-### Installing the dependencies
-
-```bash
-yarn 
-cd example
-yarn
-```
-
-### Initializing the development environment
-
-```bash
-yarn watch
-```
-
-In another terminal tab
-
-```bash
-cd example
-yarn start
-```
-
+Read our [contributing guide](CONTRIBUTING.md) to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes to the project.
 ## Examples
 
 Example folder [here](./example/).
