@@ -16,6 +16,7 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'ifood', // Usually your GitHub org/user name.
   projectName: 'ifood-docusaurus-theme', // Usually your repo name.
+  trailingSlash: false,
   themes: [
     path.resolve(__dirname, '..', 'lib')
   ],
@@ -28,13 +29,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
+          editUrl: 'https://github.com/ifood/ifood-docusaurus-theme',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -56,7 +51,7 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/ifood/ifood-docusaurus-theme',
             label: 'GitHub',
             position: 'right',
           },
@@ -79,15 +74,15 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: '#',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: '#',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: '#',
               },
             ],
           },
@@ -100,7 +95,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/ifood/ifood-docusaurus-theme',
               },
             ],
           },
