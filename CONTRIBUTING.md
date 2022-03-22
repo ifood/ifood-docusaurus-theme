@@ -2,10 +2,11 @@
 
 If you're interested in contributing to the project, hopefully, this document makes the process for contributing clear.
 
+First of all, read our [Get Involved guide](https://github.com/ifood/.github/blob/main/GET_INVOLVED.md) to understand how contribute with this project. Also read the [security guidelines](https://github.com/ifood/.github/blob/main/SECURITY.md) to help us to provide a safe code.
+
 ## Code of Conduct
 
 iFood has adopted a Code of Conduct that we expect project participants to adhere to. Please read [the full text](https://github.com/ifood/.github/blob/main/CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
-
 
 
 ## Required
