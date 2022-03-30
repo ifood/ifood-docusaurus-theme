@@ -1,5 +1,12 @@
 # Changelog
 
+# [0.2.0](https://github.com/ifood/ifood-docusaurus-theme/compare/v0.1.0...v0.2.0) (2022-03-30)
+
+
+### Bug Fixes
+
+* **style:** Fix main-wrapper selectors and add a new breakpoint ([53465f8](https://github.com/ifood/ifood-docusaurus-theme/commit/53465f88357c8987cf2b65bc457ce6304a30d92b))
+
 # 0.1.0 (2022-03-16)
 
 
