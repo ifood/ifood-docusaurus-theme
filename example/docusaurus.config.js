@@ -10,7 +10,7 @@ const config = {
   title: 'iFood Docusaurus Theme',
   tagline: 'Docusaurus theme for all iFood open source projects',
   url: 'https://ifood.github.io',
-  baseUrl: '/ifood-docusaurus-theme',
+  baseUrl: '/ifood-docusaurus-theme/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
