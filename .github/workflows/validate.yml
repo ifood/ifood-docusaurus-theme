@@ -45,7 +45,7 @@ jobs:
         cache: 'yarn'
 
     - name: Install Theme
-        run: yarn --frozen-lockfile
+      run: yarn --frozen-lockfile
 
     - name: Build Docusaurus Theme
       run: yarn build
