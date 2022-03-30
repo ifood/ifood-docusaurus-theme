@@ -44,8 +44,16 @@ jobs:
         node-version: '16'
         cache: 'yarn'
 
-    - name: Install
-      run: yarn --frozen-lockfile
+    - name: Install Theme
+        run: yarn --frozen-lockfile
 
-    - name: Build
+    - name: Build Docusaurus Theme
+      run: yarn build
+
+    - name: Install Example App
+      working-directory: ./example
+      run: yarn --frozen-lockfile
+    
+    - name: Build website
+      working-directory: ./example
       run: yarn build
