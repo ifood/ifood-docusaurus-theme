@@ -70,6 +70,7 @@
   },
   "exclude": [
     "tests",
-    "lib"
+    "lib",
+    "example"
   ]
 }
