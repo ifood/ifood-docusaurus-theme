@@ -14,10 +14,28 @@ Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new
 
 ## Generate a new site
 
-Generate a new Docusaurus site using the **classic template**:
+1. Generate a new Docusaurus site using the **classic template**:
 
 ```shell
 npm init docusaurus@latest my-website classic
+```
+
+2. Install the package
+
+```bash
+npm i @ifood/docusaurus-theme
+```
+
+3. Push the theme to the themes array in `docusaurus.config.js`
+
+```js
+...
+projectName: 'docusaurus', // Usually your repo name.
+themes: [
+    '@ifood/docusaurus-theme'
+],
+presets: [
+...
 ```
 
 ## Start your site
