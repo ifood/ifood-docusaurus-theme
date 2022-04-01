@@ -12,12 +12,12 @@
 
 This project was created to provide a consistent experience trought iFood project's documentations using Docusaurus. It relies in [Swizzling](https://docusaurus.io/docs/swizzling) feature of Docusaurus, which allows deeper site customizations. Swizzling permits to swap a theme component with our implementation. Thanks to this feature and all customization given to us by the tool, we could easily create this theme.
 
-> Note: It's currently unstable due the not full support to themes from Docusaurus. If there's any problem with the usage, please open an issue. 
+> Note: It's currently unstable due the not full support to themes from Docusaurus. If there's any problem with the usage, please open an issue.
 
 ### Preview
 
 <p align="center">
-  <a href="#preview"><img src="./docs/introduction.png" alt="Docusaurus"></a>
+  <a href="#preview"><img src="./docs/ifood_docusaurus.svg" alt="Docusaurus"></a>
 </p>
 
 ## Getting started
@@ -27,7 +27,7 @@ This project was created to provide a consistent experience trought iFood projec
 - [Docusaurus](https://docusaurus.io/docs) >= 2.0.0
 - [Node](https://nodejs.org/en/download/) >= 16.14.0
 
-1. Install docusaurus 
+1. Install docusaurus
 
 > Due the unstable version of Docusaurus, we currently recomend use the version `2.0.0-beta.9`. We don't guarantee that the theme will work properly in other versions.
 
