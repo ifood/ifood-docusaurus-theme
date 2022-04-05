@@ -10,50 +10,30 @@ on:
       - 'main'
 
 jobs:
-  validate:
+  validate_code:
+    uses: ifood/.workflows/.github/workflows/npm_validate.yml@main
+  validate_site:
+    name: Validate theme
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: '16'
           cache: 'yarn'
+      - name: Install Theme
+        run: yarn --frozen-lockfile
 
-      - name: Install
+      - name: Build Docusaurus Theme
+        run: yarn build
+
+      - name: Install Example App
+        working-directory: ./example
         run: yarn --frozen-lockfile
       
-      - name: Format
-        run: yarn format:check
-
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
-
-    - name: Setup Node
-      uses: actions/setup-node@v3
-      with:
-        node-version: '16'
-        cache: 'yarn'
-
-    - name: Install Theme
-      run: yarn --frozen-lockfile
-
-    - name: Build Docusaurus Theme
-      run: yarn build
-
-    - name: Install Example App
-      working-directory: ./example
-      run: yarn --frozen-lockfile
-    
-    - name: Build website
-      working-directory: ./example
-      run: yarn build
+      - name: Build website
+        working-directory: ./example
+        run: yarn build
