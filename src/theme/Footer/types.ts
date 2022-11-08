@@ -19,5 +19,4 @@ export type FooterContent = {
 
 export type LinksType = {
   links: LinkType;
-  idx: number;
 };
