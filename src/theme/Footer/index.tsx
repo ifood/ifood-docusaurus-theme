@@ -1,13 +1,13 @@
-import * as React from "react";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import bem from 'better-bem'
-import classNames from 'classnames'
+import * as React from 'react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import bem from 'better-bem';
+import classNames from 'classnames';
 
-import useThemeContext from "../../useThemeContext";
-import { Logo, Facebook, Instagram, Twitter, Youtube } from "./icons";
-import "./styles.css";
-import { FooterContent } from "./types";
-import { Links } from "./Links";
+import useThemeContext from '../../useThemeContext';
+import { Logo, Facebook, Instagram, Twitter, Youtube } from './icons';
+import './styles.css';
+import { FooterContent } from './types';
+import { Links } from './Links';
 
 const { cn, el } = bem('footer');
 
@@ -55,7 +55,7 @@ export default function Footer() {
             </div>
           </div>
           {footerContent?.links?.map((links, idx) => (
-            <Links links={links} idx={idx}/>
+            <Links key={`footer-link-${idx}`} links={links} />
           ))}
         </div>
         <div className={classNames('row', el('bottom').cn)}>
