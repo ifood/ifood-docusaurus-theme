@@ -979,10 +979,10 @@ before-after-hook@^2.2.0:
   resolved "https://registry.yarnpkg.com/before-after-hook/-/before-after-hook-2.2.2.tgz#a6e8ca41028d90ee2c24222f201c90956091613e"
   integrity sha512-3pZEU3NT5BFUo/AD5ERPWOgQOCZITni6iavr5AUw5AUwQjMlI0kzu5btnyD39AF0gUEsDPwJT+oY1ORBJijPjQ==
 
-better-bem@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/better-bem/-/better-bem-2.0.1.tgz#671f51bfc3fe205f0d04b023afced29833a3d091"
-  integrity sha512-3iSv2C4W8VxErkMHOJAdh1a2MOB5d7wpNbd4nDU0hdncv3mldDeb6IPro8TUxOgwvIlNwhW6SX/veXmxCh8suw==
+better-bem@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/better-bem/-/better-bem-2.0.3.tgz#f837c5351e6052d7bd5bcf1668bdaed5488ba483"
+  integrity sha512-LVNaAquqkrdoutu6Xs32wzaAVA6yIHh1KlwZsDQwTwjRTh5J7vi6v6LmBL0+sE5+pOZRfNuiz6zmpOdyrLbKDA==
   dependencies:
     array-flatten "^3.0.0"
     typechecker "^4.7.0"
