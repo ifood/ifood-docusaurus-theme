@@ -14,6 +14,8 @@ This project was created to provide a consistent experience trought iFood projec
 
 > Note: It's currently unstable due the not full support to themes from Docusaurus. If there's any problem with the usage, please open an issue. 
 
+> A little change
+
 ### Preview
 
 <p align="center">
