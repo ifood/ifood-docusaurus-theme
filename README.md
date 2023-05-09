@@ -3,6 +3,7 @@
   <p align="center">iFood Docusaurus Theme</p>
 </h1>
 
+
 [![npm](https://img.shields.io/npm/v/@ifood/docusaurus-theme)](https://www.npmjs.com/package/@ifood/docusaurus-theme)
 [![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
